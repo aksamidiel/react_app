@@ -6,10 +6,10 @@ import classes from './NavBar.module.css';
 const Nav =() =>{
     return <nav className={classes.nav}>
     <div className={classes.item}>
-      <NavLink to="/profile">Profile</NavLink>
+      <NavLink to="/profile" activeclassname = {classes.activeLink}>Profile</NavLink>
     </div>
     <div className={`${classes.item} ${classes.active}`}>
-      <NavLink to="/dialogs">dialogs</NavLink>
+      <NavLink to="/dialogs" activeclassname = {classes.activeLink}>dialogs</NavLink>
     </div>
     <div className={`${classes.item} ${classes.active}`}>
       <NavLink to="/messages">messages</NavLink>
