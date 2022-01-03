@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Header from './components/Header/Header';
 import Nav from './components/NavBar/Nav';
 import Profile from './components/Profile/Profile';
-import Messages from './components/Messages/Messages';
+import Messages from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
