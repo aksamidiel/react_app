@@ -5,29 +5,13 @@ import Message from './Message/Message'
 
 const Dialogs = (props)=>{
 
-    let dialogs = [
-                       {id:1, name: 'Dimych'}, 
-                       {id:2, name: 'Andrey'},
-                       {id:3, name: 'Sveta'}, 
-                       {id:4, name: 'Igor'},
-                       {id:5, name: 'Sasha'}, 
-                       {id:6, name: 'Alexey'},
-                       ]
-
-    let messages = [
-                       {id:1, message: 'Hi'}, 
-                       {id:2, message: 'Hello'},
-                       {id:3, message: 'Somebody'}, 
-                       {id:4, message: 'Something'},
-                       {id:5, message: 'how do you do?'}, 
-                       {id:6, message: 'This is a nice job'},
-                       ]        
+    
                         
-    let dialogsElemets = dialogs.map(
+    let dialogsElemets = props.dialogs.map(
                                 (d) => 
                                 <DialogItem name={d.name} id={d.id}/>) // маппинг диалогов
 
-    let messagesElements = messages.map(
+    let messagesElements = props.messages.map(
                                 (m) => <Message message={m.message}/>) // маппинг сообщений
     
 
