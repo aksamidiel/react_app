@@ -26,10 +26,10 @@ const App = (props) => {
             <Route path='/news' element={<News/>}/> 
             <Route path='/settings' element={<Settings/>}/> */}   
 
-            <Route path='/profile' element={<Profile posts = {props.posts}/>}/>
-            <Route path='/dialogs' element={<Dialogs dialogs = {props.dialogs} messages={props.messages}/>}/>
-            <Route path='/news' element={<News news = {props.news}/>}/> 
-            <Route path='/settings' element={<Settings settings = {props.settings}/>}/> 
+            <Route path='/profile' element={<Profile state = {props.appState.profilePage}/>}/>
+            <Route path='/dialogs' element={<Dialogs state = {props.appState.dialogsPage}/>}/>
+            <Route path='/news' element={<News state = {props.appState.newsPage}/>}/> 
+            <Route path='/settings' element={<Settings state = {props.appState.settingsPage}/>}/> 
           </Routes>
         </div>
       </div>

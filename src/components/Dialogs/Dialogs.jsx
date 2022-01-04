@@ -7,11 +7,11 @@ const Dialogs = (props)=>{
 
     
                         
-    let dialogsElemets = props.dialogs.map(
+    let dialogsElemets = props.state.dialogs.map(
                                 (d) => 
                                 <DialogItem name={d.name} id={d.id}/>) // маппинг диалогов
 
-    let messagesElements = props.messages.map(
+    let messagesElements = props.state.messages.map(
                                 (m) => <Message message={m.message}/>) // маппинг сообщений
     
 
