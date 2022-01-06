@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Nav from './components/NavBar/Nav';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
+import Friends from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
@@ -28,6 +29,7 @@ const App = (props) => {
 
             <Route path='/profile' element={<Profile state = {props.appState.profilePage}/>}/>
             <Route path='/dialogs' element={<Dialogs state = {props.appState.dialogsPage}/>}/>
+            <Route path='/friends' element={<Friends state = {props.appState.sidebar}/>}/>
             <Route path='/news' element={<News state = {props.appState.newsPage}/>}/> 
             <Route path='/settings' element={<Settings state = {props.appState.settingsPage}/>}/> 
           </Routes>

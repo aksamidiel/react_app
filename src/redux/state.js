@@ -33,9 +33,20 @@ let state = {
         ]
     },
     newsPage:{},
-    settingsPage:{}
+    settingsPage:{},
+    sidebar: {
+        friends:[
+            {name: 'Dimych'},
+            {name: 'Andrey'},
+            {name: 'Sveta'},
+            {name: 'Igor'},
+            {name: 'Sasha'},
+            {name: 'Alexey'},
+        ]
+    }
 
 
 }
+    
 
 export default state

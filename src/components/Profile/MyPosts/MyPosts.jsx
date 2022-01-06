@@ -7,15 +7,22 @@ const MyPosts=(props)=>{
         
     let postsElements = props.posts.map(p => <Post  message = {p.message} likesCount = {p.likesCount}/>)
 
+    let addPost = () =>{
+        let text = newPostElement.current.value; // получаем значение из ссылки
+        alert(text)
+    }
+
+    let newPostElement = React.createRef() // ссылка на которую привязывается textarea
+
     return (
         <div className={s.postsBlock}>
             <h3>My Posts</h3>
             <div>
                 <div>
-                    <textarea></textarea>
+                    <textarea ref = {newPostElement}></textarea>  
                 </div>
                 <div>
-                    <button>Add_post</button>
+                    <button onClick = { addPost }>Add_post</button>
                 </div>
 
             </div>
