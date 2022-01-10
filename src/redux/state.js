@@ -34,7 +34,7 @@ let state = {
     },
     newsPage:{},
     settingsPage:{},
-    sidebar: {
+    friendsPage: {
         friends:[
             {name: 'Dimych'},
             {name: 'Andrey'},

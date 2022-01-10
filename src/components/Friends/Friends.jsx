@@ -5,7 +5,7 @@ import classes from './Friends.module.css';
 const Friends =(props) =>{
 
     let friendsElements = props.state.friends.map(
-        (fr) => <Friend friend={fr.name}/>) // маппинг сообщений
+        (f) => <Friend name={f.name}/>) // маппинг сообщений
 
     
 
