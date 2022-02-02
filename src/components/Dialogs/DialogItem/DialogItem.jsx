@@ -4,9 +4,10 @@ import classes from './../Dialogs.module.css';
 
 
 const DialogItem =(props) => {
-    let path = "/dialogs/" + props.id;
+    let path = "/dialogs/" + props.id; // конкатенация
     return <div className={classes.dialog +" "+classes.active}>
         <NavLink to={path}>{props.name}</NavLink>
+        
         
     </div>
 }

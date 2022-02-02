@@ -1,17 +1,18 @@
 import React from "react";
-import s from './Post.module.css'
+import classes from './Post.module.css'
 
 
 const Post=(props)=>{
 
    
-    return <div className={s.item}>
+    return <div className={classes.item}>
             <img src='https://www.blast.hk/attachments/68493/'/>
 
            {props.message}
             <div>
-            <span>numLike-</span>{props.like}
-            <span>numDislike-</span>{props.dislike}
+            <span>numLike: </span>{props.likesCount}
+            <br/>
+            <span>numDislike: </span>{props.dislikesCount}
             </div>
         </div>
           

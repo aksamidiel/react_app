@@ -4,12 +4,12 @@ let state = {
 
     profilePage: {
         posts: [   // данные, которые потом будем с бэка подтягивать
-            { id: 1, message: 'first post', likesCount: 12 },
-            { id: 2, message: 'second post', likesCount: 10 },
-            { id: 3, message: 'third post', likesCount: 9 },
-            { id: 4, message: 'fourth post', likesCount: 3 },
-            { id: 5, message: 'fifth post', likesCount: 18 },
-            { id: 6, message: 'six post', likesCount: 20 },
+            { id: 1, message: 'first post', likesCount: 12, dislikesCount: 2 },
+            { id: 2, message: 'second post', likesCount: 10, dislikesCount: 2 },
+            { id: 3, message: 'third post', likesCount: 9, dislikesCount: 2 },
+            { id: 4, message: 'fourth post', likesCount: 3, dislikesCount: 2 },
+            { id: 5, message: 'fifth post', likesCount: 18, dislikesCount: 2 },
+            { id: 6, message: 'six post', likesCount: 20, dislikesCount: 2 },
         ]
 
     },

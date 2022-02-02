@@ -3,6 +3,9 @@ import classes from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message'
 
+
+
+
 const Dialogs = (props)=>{
                  
     let dialogsElemets = props.state.dialogs.map(
@@ -14,10 +17,8 @@ const Dialogs = (props)=>{
 
     return(
         <div className = {classes.dialogs}>
-            <div className = {classes.dialogItems}>
-                
-                { dialogsElemets  }
-                   
+            <div className = {classes.dialogItems}>   
+                { dialogsElemets }
             </div>
             <div className={classes.messages}>
                 { messagesElements }

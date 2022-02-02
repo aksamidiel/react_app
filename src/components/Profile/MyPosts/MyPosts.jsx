@@ -5,11 +5,12 @@ import Post from './Post/Post'
 
 const MyPosts=(props)=>{
         
-    let postsElements = props.posts.map(p => <Post  message = {p.message} likesCount = {p.likesCount}/>)
+    let postsElements = props.posts.map(p => <Post  message = {p.message} likesCount = {p.likesCount}
+                                        dislikesCount = {p.dislikesCount}/>)
 
     let addPost = () =>{
         let text = newPostElement.current.value; // получаем значение из ссылки
-        alert(text)
+        console.log(text)
     }
 
     let newPostElement = React.createRef() // ссылка на которую привязывается textarea
